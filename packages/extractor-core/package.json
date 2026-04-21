@@ -1,0 +1,25 @@
+{
+  "name": "@unvibe/extractor-core",
+  "version": "0.0.1",
+  "description": "Platform-agnostic in-page extractor: scrolls virtualized file trees, reads Monaco/CodeMirror models, emits a FileMap.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./tree": "./src/tree.js",
+    "./editor": "./src/editor.js",
+    "./zip": "./src/zip.js",
+    "./platform": "./src/platform.js"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint src test --quiet"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "happy-dom": "^15.11.7",
+    "vitest": "^2.1.4"
+  }
+}

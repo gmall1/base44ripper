@@ -1,4 +1,4 @@
-// @base44ripper/detect — scan a Base44 export and produce a structured lock-in
+// @unvibe/detect — scan a Base44 export and produce a structured lock-in
 // detection report. Pure functions over an in-memory file map so the same code
 // runs server-side (API routes), in workers, and in tests.
 

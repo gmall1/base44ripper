@@ -1,0 +1,22 @@
+{
+  "name": "@unvibe/extension-chrome",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Chrome MV3 extension that runs the unvibe extractor inside the user's active vibe-code editor tab.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js --watch",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@unvibe/extractor-adapter-base44": "workspace:*",
+    "@unvibe/extractor-adapter-bolt": "workspace:*",
+    "@unvibe/extractor-adapter-lovable": "workspace:*",
+    "@unvibe/extractor-core": "workspace:*"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "vitest": "^2.1.4"
+  }
+}

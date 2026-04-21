@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/smoke.js — end-to-end smoke test.
 // Runs the pokemon-base44-export fixture through the full pipeline, writes the
-// result to /tmp/base44ripper-smoke/, and prints a summary. Meant to be run
+// result to /tmp/unvibe-smoke/, and prints a summary. Meant to be run
 // alongside `pnpm install && pnpm build` in that directory to prove the
 // output is a real, buildable project.
 //
@@ -10,13 +10,13 @@
 import { readFileSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadZipToFileMap } from '@base44ripper/detect';
+import { loadZipToFileMap } from '@unvibe/detect';
 import { transformProject } from '../src/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FIXTURE = resolve(__dirname, '../test/fixtures/pokemon-base44-export.zip');
 
-const outputDir = resolve(process.argv[2] ?? '/tmp/base44ripper-smoke');
+const outputDir = resolve(process.argv[2] ?? '/tmp/unvibe-smoke');
 
 console.log(`[smoke] reading fixture: ${FIXTURE}`);
 const buffer = readFileSync(FIXTURE);

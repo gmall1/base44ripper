@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "unvibe — extract your vibe-code project",
+  "short_name": "unvibe",
+  "version": "0.0.1",
+  "description": "Extract the full source of your Base44, Lovable, or Bolt project — including files that lazy-load — and eject the platform lock-in.",
+  "action": {
+    "default_title": "unvibe",
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "host_permissions": [
+    "https://*.base44.app/*",
+    "https://base44.app/*",
+    "https://*.lovable.dev/*",
+    "https://lovable.dev/*",
+    "https://gpteng.co/*",
+    "https://*.bolt.new/*",
+    "https://bolt.new/*",
+    "https://stackblitz.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.base44.app/*",
+        "https://base44.app/*",
+        "https://*.lovable.dev/*",
+        "https://lovable.dev/*",
+        "https://gpteng.co/*",
+        "https://*.bolt.new/*",
+        "https://bolt.new/*",
+        "https://stackblitz.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

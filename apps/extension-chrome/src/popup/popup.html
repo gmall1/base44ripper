@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>unvibe</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>unvibe</h1>
+      <p id="subtitle">Detecting…</p>
+    </header>
+    <main>
+      <button id="extract" disabled>Extract project</button>
+      <section id="tip" class="tip hidden">
+        <p>
+          Tip: switch to <strong>desktop view</strong> and make sure the entire
+          file list is visible before clicking Extract. unvibe scrolls the tree
+          for you, but some editors hide the panel on mobile widths.
+        </p>
+      </section>
+      <section id="status" class="status hidden"></section>
+      <section id="result" class="result hidden"></section>
+    </main>
+    <footer>
+      <a id="upload-link" href="https://unvibe.app/upload" target="_blank" rel="noreferrer noopener">
+        Upload to unvibe.app →
+      </a>
+    </footer>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

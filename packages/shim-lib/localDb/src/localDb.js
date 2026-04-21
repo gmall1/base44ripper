@@ -1,4 +1,4 @@
-// localDb.js — injected by base44ripper into ejected projects.
+// localDb.js — injected by unvibe into ejected projects.
 //
 // A schema-driven, localStorage-backed drop-in replacement for the Base44 SDK
 // surface that your source code already talks to:
@@ -19,10 +19,10 @@
 // To migrate to a real backend later, replace this file (keep the exported
 // `db` shape) and your app keeps working unchanged.
 
-const STORAGE_KEY = 'base44ripper:db:v1';
-const SCHEMA_KEY = 'base44ripper:schemas:v1';
+const STORAGE_KEY = 'unvibe:db:v1';
+const SCHEMA_KEY = 'unvibe:schemas:v1';
 
-// Entity schemas are injected at codemod time by base44ripper. Importing the
+// Entity schemas are injected at codemod time by unvibe. Importing the
 // generated file avoids a circular dependency on the runtime while still
 // letting each project ship its own list of entities.
 import { entitySchemas } from './_entitySchemas.generated.js';
@@ -104,7 +104,7 @@ if (broadcastChannel) {
 
 // ---------- auth (single local user) ----------
 
-const USER_KEY = 'base44ripper:user:v1';
+const USER_KEY = 'unvibe:user:v1';
 
 function loadUser() {
   if (!hasLocalStorage()) return null;
