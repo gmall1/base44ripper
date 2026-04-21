@@ -1,0 +1,23 @@
+{
+  "name": "@base44ripper/detect",
+  "version": "0.0.1",
+  "description": "Scan a Base44 export and produce a structured lock-in detection report.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint src test --quiet"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^9.39.4",
+    "globals": "^17.5.0",
+    "vitest": "^2.1.4"
+  }
+}
