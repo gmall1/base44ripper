@@ -1,5 +1,5 @@
 {
-  "name": "@base44ripper/detect",
+  "name": "@unvibe/detect",
   "version": "0.0.1",
   "description": "Scan a Base44 export and produce a structured lock-in detection report.",
   "type": "module",

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadZipToFileMap } from '@base44ripper/detect';
+import { loadZipToFileMap } from '@unvibe/detect';
 import {
   transformProject,
   transformPackageJson,

@@ -1,11 +1,11 @@
 {
-  "name": "base44ripper",
+  "name": "unvibe",
   "version": "0.0.1",
   "private": true,
   "description": "One-click escape from vibe-code platform lock-in. Upload a Base44 export, get a clean, runnable repo you own forever.",
   "scripts": {
     "build": "pnpm -r build",
-    "dev": "pnpm --filter @base44ripper/web dev",
+    "dev": "pnpm --filter @unvibe/web dev",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck"

@@ -5,15 +5,15 @@
 - [ ] Monorepo scaffold
 - [ ] Landing page
 - [ ] Upload form with drag-drop zip
-- [ ] `@base44ripper/detect` — scan Base44 export, emit detection report
-- [ ] `@base44ripper/codemods-base44` — deterministic transforms
+- [ ] `@unvibe/detect` — scan Base44 export, emit detection report
+- [ ] `@unvibe/codemods-base44` — deterministic transforms
   - [ ] Strip `@base44/sdk` + `@base44/vite-plugin` from `package.json`
   - [ ] Rewrite `vite.config.js` to drop the `base44()` plugin
   - [ ] Replace `src/api/base44Client.js` stub with real client
   - [ ] Generate `localDb.js` shim from `entities/*/schema.json`
   - [ ] Rewrite `src/lib/app-params.js` to use Vite env vars
   - [ ] Rewrite `README.md` and `index.html` to drop Base44 branding
-- [ ] `@base44ripper/shim-lib-localDb` — runtime shim injected into customer repos (Quick Eject tier)
+- [ ] `@unvibe/shim-lib-localDb` — runtime shim injected into customer repos (Quick Eject tier)
 - [ ] Supabase tier: bundle Ai-Automators SDK + generate Supabase schema SQL from `entities/*/schema.json`
 - [ ] Pipeline worker (queue, R2, Resend email delivery)
 - [ ] Stripe Checkout + paywalled download
