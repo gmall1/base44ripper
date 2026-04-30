@@ -1,0 +1,19 @@
+{
+  "name": "@unvibe/extractor-adapter-bolt",
+  "version": "0.0.1",
+  "description": "Bolt.new / StackBlitz WebContainer extractor adapter for unvibe.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@unvibe/extractor-core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

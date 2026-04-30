@@ -1,0 +1,20 @@
+{
+  "name": "@unvibe/shim-lib-localDb",
+  "version": "0.0.1",
+  "description": "Runtime shim injected into ejected projects: schema-driven localStorage-backed drop-in for the Base44 SDK surface.",
+  "type": "module",
+  "main": "src/localDb.js",
+  "exports": {
+    ".": "./src/localDb.js",
+    "./template": "./src/localDb.js",
+    "./base44Client": "./src/base44Client.js",
+    "./entities-template": "./src/entities.js"
+  },
+  "files": ["src"],
+  "scripts": {
+    "test": "vitest run --passWithNoTests"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

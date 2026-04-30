@@ -1,0 +1,21 @@
+{
+  "name": "@unvibe/codemods-base44",
+  "version": "0.0.1",
+  "description": "Deterministic codemods that transform a Base44 export into a clean, runnable repo.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@unvibe/detect": "workspace:*",
+    "@unvibe/shim-lib-localDb": "workspace:*"
+  },
+  "devDependencies": {
+    "jszip": "^3.10.1",
+    "vitest": "^2.1.4"
+  }
+}

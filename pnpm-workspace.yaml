@@ -1,4 +1,7 @@
 packages:
   - "apps/*"
   - "packages/*"
+  - "packages/codemods/*"
+  - "packages/shim-lib/*"
+  - "packages/extractor-adapters/*"
   - "workers/*"

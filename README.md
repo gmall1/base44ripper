@@ -1,4 +1,4 @@
-# base44ripper
+# unvibe
 
 **One-click escape from vibe-code platform lock-in.**
 
@@ -8,7 +8,7 @@ Upload the zip your vibe-code platform gave you. Get back a clean, runnable repo
 
 Vibe-code platforms (Base44, Lovable, Bolt.new, v0, Replit Agent, etc.) are great for getting an app off the ground — but they leave you locked in. Their "export" buttons produce code that either doesn't run at all, or silently no-ops every backend call.
 
-base44ripper fixes that. We run a deterministic pipeline over your export that:
+unvibe fixes that. We run a deterministic pipeline over your export that:
 
 1. Strips the platform SDKs and build plugins
 2. Regenerates `vite.config.js` / `next.config.js` without their hooks
@@ -31,7 +31,7 @@ base44ripper fixes that. We run a deterministic pipeline over your export that:
 ## Monorepo layout
 
 ```
-base44ripper/
+unvibe/
 ├── apps/
 │   └── web/                     # next.js: landing, upload, checkout, download
 ├── packages/

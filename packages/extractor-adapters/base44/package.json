@@ -1,0 +1,19 @@
+{
+  "name": "@unvibe/extractor-adapter-base44",
+  "version": "0.0.1",
+  "description": "Base44 editor adapter for the unvibe extractor. Knows how to walk the Base44 file tree and read its Monaco models.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@unvibe/extractor-core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

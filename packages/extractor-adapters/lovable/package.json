@@ -1,0 +1,19 @@
+{
+  "name": "@unvibe/extractor-adapter-lovable",
+  "version": "0.0.1",
+  "description": "Lovable.dev editor adapter for the unvibe extractor.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@unvibe/extractor-core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}
